@@ -1,0 +1,17 @@
+version: "3.6"
+
+services:
+
+  localstack:
+    container_name: localstack
+    image: localstack/localstack:latest
+    ports:
+      - "4566-4599:4566-4599"
+      - "9000:9000"
+    environment:
+      - SERVICES=secretsmanager
+      - DEFAULT_REGION=us-east-1
+      - DATA_DIR=/tmp/localstack/data
+      - PORT_WEB_UI=9000
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - START_WEB=1
