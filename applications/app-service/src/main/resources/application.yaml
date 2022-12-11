@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:8080}
+spring:
+  application:
+    name: spring-secret-manager-reactive
+  devtools:
+    add-properties: false
+  profiles:
+    include:

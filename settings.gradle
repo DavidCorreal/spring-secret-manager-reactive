@@ -1,0 +1,8 @@
+rootProject.name = 'spring-secret-manager-reactive'
+
+include ':app-service'
+project(':app-service').projectDir = file('./applications/app-service')
+include ':model'
+project(':model').projectDir = file('./domain/model')
+include ':usecase'
+project(':usecase').projectDir = file('./domain/usecase')
