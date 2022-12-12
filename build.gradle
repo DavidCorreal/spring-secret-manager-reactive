@@ -4,7 +4,9 @@ buildscript {
 		springBootVersion = '2.7.3'
 		sonarVersion = '3.0'
 		jacocoVersion = '0.8.8'
-        	lombokVersion = '1.18.24'
+        lombokVersion = '1.18.24'
+        sdkAWSVersion = '2.18.35'
+        jacksonVersion = '2.14.1'
 	}
 }
 
