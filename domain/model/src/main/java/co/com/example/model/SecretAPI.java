@@ -2,11 +2,12 @@ package co.com.example.model;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @Getter
-@RequiredArgsConstructor
+@Setter
 public class SecretAPI {
 
-    private final String token;
+    private String token;
 
 }
